@@ -58,7 +58,20 @@ text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
+        letter-spacing: 0.32px
+    }
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.main-nav-link:focus {
+    color: var(--button-extra-color);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
         letter-spacing: 0.32px;
+        cursor: pointer;
 }
 
 .address-link {
@@ -68,6 +81,17 @@ text-transform: uppercase;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.32px;
+}
+
+.mail:hover,
+.mail:active,
+.mail:focus {
+        color: var(--button-extra-color);
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.32px;
 }
 
 /* =========================== /Header =========================== */
@@ -99,6 +123,12 @@ text-transform: uppercase;
             font-weight: 500;
             line-height: 1.5;
             letter-spacing: 0.64px;
+}
+
+.hero-button:hover {
+    border-radius: 4px;
+        background: var(--button-extra-color);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .feature-menu {
     color: var(--main-text-color);
