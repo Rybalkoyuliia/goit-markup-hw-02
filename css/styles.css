@@ -1,148 +1,145 @@
 :root {
     --main-background-color: #FFFFFF;
-    --second-background-color: #2E2F42;
-    --third-background-color: #F4F4FD;
+    --dark-background-color: #2E2F42;
+    --light-background-color: #F4F4FD;
     --main-text-color: #2E2F42;
-    --second-text-color: #434455;
-    --third-text-title-color: #FFFFFF;
-    --fourth-text-color: #F4F4FD;
+    --submain-text-color: #434455;
+    --dark-mode-title-text-color: #FFFFFF;
+    --dark-mode-submenu-text-color: #F4F4FD;
     --accent-color: #4D5AE5;
+    --button-extra-color: #404BBF;
+    --background-filter-button: #F4F4FD;
+    --main-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --border-button-color: #E7E9FC;
 }
 
 body {
-    font-family: "Roboto" serif;
     background-color: var(--main-background-color);
 }
 
- li {
-     list-style-type: none;
- }
+.underline {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* =========================== Header =========================== */
 
 header {
     background-color: var(--main-background-color);
 }
 
-footer {
-    background-color: var(--second-background-color);
-}
 .web-logo {
 color: var(--accent-color);
-text-decoration: none;
-font-family: Raleway;
+font-family: var(--secondary-font-family);
 font-size: 18px;
-font-style: normal;
 font-weight: 800;
-line-height: 21px;
+line-height: 1.17;
 letter-spacing: 0.54px;
 text-transform: uppercase;
 }
 
 .studio-logo {
     color: var(--main-text-color);
-    text-decoration: none;
-        font-family: Raleway;
+        font-family: var(--secondary-font-family);
         font-size: 18px;
-        font-style: normal;
         font-weight: 800;
-        line-height: 21px;
+        line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
 }
 
 .main-nav-link {
-    color: var(--second-text-color);
-    text-decoration: none;
-        font-family: Roboto;
+    color: var(--submain-text-color);
+        font-family: var(--main-font-family);
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.32px;
 }
 
 .address-link {
-    color: var(--second-text-color);
-    text-decoration: none;
-        font-family: Roboto;
+    color: var(--submain-text-color);
+        font-family: var(--main-font-family);
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.32px;
 }
 
-.title {
-    background-color: var(--second-background-color);
+/* =========================== /Header =========================== */
+
+/* =========================== MAIN =========================== */
+
+.hero {
+    background-color: var(--dark-background-color);
 }
 
-.title-main {
-    color: var(--third-text-title-color);
+.hero-main {
+    color: var(--dark-mode-title-text-color);
         text-align: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 56px;
-        font-style: normal;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 1.07;
         letter-spacing: 1.12px;
 }
 
-.title-button {
+.hero-button {
     border-radius: 4px;
-        background: var(--accent-color);
+        background-color: var(--accent-color);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: var(--third-text-title-color);
         text-align: center;
-            font-family: Roboto;
+            font-family: var(--main-font-family);
             font-size: 16px;
-            font-style: normal;
             font-weight: 500;
-            line-height: 24px;
+            line-height: 1.5;
             letter-spacing: 0.64px;
 }
 .feature-menu {
     color: var(--main-text-color);
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 20px;
-        font-style: normal;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: 0.4px;
 }
 
 .feature-text {
-color: var(--second-text-color);
-    font-family: Roboto;
+color: var(--submain-text-color);
+    font-family: var(--main-font-family);
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
 .activity-title {
     color: var(--main-text-color);
         text-align: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 36px;
-        font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
 }
 
 .team {
-    background-color: var(--third-background-color);
+    background-color: var(--light-background-color);
 }
 
-.team-title {
+.supertitle {
     color: var(--main-text-color);
         text-align: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 36px;
-        font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
 }
@@ -150,55 +147,103 @@ color: var(--second-text-color);
 .team-name {
     color: var(--main-text-color);
         text-align: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 20px;
-        font-style: normal;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: 0.4px;
 }
 
 .team-description {
-    color: var(--second-text-color);
+    color: var(--submain-text-color);
         text-align: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.32px;
 }
 
-.slogan {
-    color: var(--fourth-text-color);
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.32px;
+/* =========================== /MAIN =========================== */
+
+
+
+
+
+
+footer {
+    background-color: var(--dark-background-color);
 }
 
 .web-logo-low {
     color: var(--accent-color);
-    text-decoration: none;
-        font-family: Raleway;
+        font-family: var(--secondary-font-family);
         font-size: 18px;
-        font-style: normal;
         font-weight: 800;
-        line-height: 21px;
+        line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
 }
 
 .logo-low .studio-logo-low {
-    color: var(--fourth-text-color);
-    text-decoration: none;
-        font-family: Raleway;
+    color: var(--dark-mode-submenu-text-color);
+        font-family: var(--secondary-font-family);
         font-size: 18px;
-        font-style: normal;
         font-weight: 800;
-        line-height: 21px;
+        line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
+}
+
+.slogan {
+    color: var(--dark-mode-submenu-text-color);
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/* =========================== /Footer =========================== */
+
+/* =========================== Portfolio ============================= */
+
+/* .hero {
+    background-color: var(--main-background-color);
+} */
+.hero-filter .filter {
+    background-color: var(--background-filter-button);
+    color: var(--accent-color);
+    border-radius: 4px;
+        border: 1px solid var(--border-button-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.64px;
+}
+
+.hero-filter .filter:hover {
+    background-color: var(--button-extra-color);
+    color: var(--dark-mode-title-text-color);
+    cursor: pointer;
+}
+
+.subtitle {
+    color: var(--main-text-color);
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+}
+
+.pic-description {
+    color: var(--submain-text-color);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
 }
