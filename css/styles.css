@@ -208,10 +208,7 @@ footer {
 
 /* =========================== Portfolio ============================= */
 
-/* .hero {
-    background-color: var(--main-background-color);
-} */
-.hero-filter .filter {
+.menu-button {
     background-color: var(--background-filter-button);
     color: var(--accent-color);
     border-radius: 4px;
@@ -224,7 +221,7 @@ footer {
         letter-spacing: 0.64px;
 }
 
-.hero-filter .filter:hover {
+.menu-button:hover {
     background-color: var(--button-extra-color);
     color: var(--dark-mode-title-text-color);
     cursor: pointer;
