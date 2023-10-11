@@ -58,7 +58,7 @@ text-transform: uppercase;
 }
 
 .list-item {
-    color: var(--submain-text-color);
+    color: var(--dark-background-color);
         font-family: var(--main-font-family);
         font-size: 16px;
         font-weight: 500;
@@ -131,11 +131,16 @@ text-transform: uppercase;
             font-weight: 500;
             line-height: 1.5;
             letter-spacing: 0.64px;
+            cursor: :pointer;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
         background: var(--button-extra-color);
+        cursor: pointer;
 }
+
 .feature-menu {
     color: var(--dark-background-color);
         font-family: var(--main-font-family);
@@ -167,6 +172,10 @@ color: var(--submain-text-color);
 
 .team {
     background-color: var(--light-background-color);
+}
+
+.team-list {
+    background-color: var(--main-background-color);
 }
 
 .supertitle {
@@ -250,7 +259,9 @@ footer {
         letter-spacing: 0.64px;
 }
 
-.menu-button:hover {
+.menu-button:hover,
+.menu-button:active,
+.menu-button:focus {
     background-color: var(--button-extra-color);
     color: var(--main-background-color);
     cursor: pointer;
@@ -258,7 +269,7 @@ footer {
 
 .subtitle {
     color: var(--dark-background-color);
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
