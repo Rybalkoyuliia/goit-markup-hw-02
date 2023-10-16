@@ -10,6 +10,12 @@
     --secondary-font-family: 'Raleway', sans-serif;
     --border-button-color: #E7E9FC;
 }
+f
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--main-background-color);
