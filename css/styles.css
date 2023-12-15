@@ -5,7 +5,6 @@
     --submain-text-color: #434455;
     --accent-color: #4D5AE5;
     --button-extra-color: #404BBF;
-    --background-filter-button: #F4F4FD;
     --main-font-family: 'Roboto', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
     --border-button-color: #E7E9FC;
@@ -254,7 +253,7 @@ footer {
 /* =========================== Portfolio ============================= */
 
 .menu-button {
-    background-color: var(--background-filter-button);
+    background-color: var(--light-background-color);
     color: var(--accent-color);
         border: 1px solid var(--border-button-color);
         text-align: center;
